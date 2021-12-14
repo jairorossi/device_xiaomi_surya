@@ -76,9 +76,6 @@ ro.telephony.iwlan_operation_mode=legacy
 # Netflix
 vendor.netflix.bsp_rev=Q6150-17263-1
 
-# Perf
-ro.vendor.perf.scroll_opt=true
-
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
