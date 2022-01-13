@@ -11,6 +11,9 @@ $(call inherit-product, firmware/xiaomi/surya/Android.mk)
 $(call inherit-product, device/xiaomi/surya/refreshrate.mk)
 USE_DYNAMIC_REFRESH_RATE := true
 
+# Device configs makefiles
+$(call inherit-product, device/xiaomi/surya/configs/device/telephony.mk)
+
 # Inherit from the proprietary configuration
 $(call inherit-product, vendor/xiaomi/surya/surya-vendor.mk)
 
@@ -169,10 +172,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     firmware/xiaomi/surya
 
-# Net
-PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor
-
 # Neural Networks
 PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor
@@ -239,22 +238,11 @@ TARGET_COMMON_QTI_COMPONENTS := \
     media-legacy \
     overlay \
     perf \
-    telephony \
     usb \
     vibrator \
     wlan
 
 $(call inherit-product, device/qcom/common/common.mk)
-
-# Radio
-PRODUCT_PACKAGES += \
-    android.hardware.radio@1.6.vendor \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
-
-#Secure element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor
 
 # Sensors
 PRODUCT_PACKAGES += \
