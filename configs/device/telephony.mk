@@ -90,8 +90,3 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.ims.rtp.enableqxdm=0 \
     persist.vendor.ims.vt.enableadb=0
 endif
-
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
-    SuryaTelephonyOverlay \
-    WifiOverlay
