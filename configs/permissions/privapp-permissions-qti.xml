@@ -25,7 +25,7 @@ It allows additional grants on top of privapp-permissions-platform.xml
 -->
 
 <permissions>
-    <privapp-permissions package="com.google.android.apps.cameralite">
+    <privapp-permissions package="com.google.android.GoogleCamera.cameralite">
         <permission name="android.permission.WAKE_LOCK"/>
         <permission name="android.permission.CAMERA"/>
         <permission name="android.permission.SYSTEM_CAMERA"/>
