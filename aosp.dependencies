@@ -21,7 +21,7 @@
        "remote"      : "pixel-devices-blobs",
        "repository"  : "vendor_xiaomi_surya",
        "target_path" : "vendor/xiaomi/surya",
-       "branch"      : "twelve"
+       "branch"      : "twelve-wip"
    },
    {
        "remote"      : "pixel-devices-blobs",
