@@ -70,3 +70,6 @@ ro.zram.periodic_wb_delay_hours=24
 
 # support otg reverse charge
 persist.vendor.otg_control=true
+
+#Blur
+ro.surface_flinger.supports_background_blur=1
