@@ -19,7 +19,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 # Inherit from common AOSP configuration
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/stag/main.mk)
 
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
@@ -29,7 +29,7 @@ $(call inherit-product, device/xiaomi/surya/refreshrate.mk)
 USE_DYNAMIC_REFRESH_RATE := true
 
 # Device identifier
-PRODUCT_NAME := aosp_surya
+PRODUCT_NAME := stag_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO X3
@@ -45,3 +45,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="surya_global-user 11 RKQ1.200826.002 V12.5.3.0.RJGMIXM release-keys"
 
 BUILD_FINGERPRINT := POCO/surya_global/surya:11/RKQ1.200826.002/V12.5.3.0.RJGMIXM:user/release-keys
+
+# Gapps
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
